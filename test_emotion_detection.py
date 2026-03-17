@@ -2,7 +2,13 @@ from EmotionDetection.emotion_detection import emotion_detector
 import unittest
 
 class TestEmotionDetection(unittest.TestCase):
+    """
+    Unit tests EmotionDetection
+    """
     def test_dominant_emotion(self):
+        """
+        Unit test for Emotion Detection
+        """
         test_param_dict = {
             "I am glad this happend" : "joy",
             "I am really mad about this" : "anger",
