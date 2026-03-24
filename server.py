@@ -42,11 +42,13 @@ def emotion_detector_route():
 
     # Format the response as per the customer's request, split for line length
     response = (
-        f"For the given statement, the system response is "
-        f"'anger': {result['anger']}, 'disgust': {result['disgust']}, "
-        f"'fear': {result['fear']}, 'joy': {result['joy']} and "
-        f"'sadness': {result['sadness']}. The dominant emotion is "
-        f"{result['dominant_emotion']}."
+        f"""For the given statement, the system response is 
+        'anger': {result['anger']}, 
+        'disgust': {result['disgust']}, 
+        'fear': {result['fear']},
+        'joy': {result['joy']} and 
+        'sadness': {result['sadness']}. 
+        The dominant emotion is **{result['dominant_emotion']}**."""
     )
     return response
 
